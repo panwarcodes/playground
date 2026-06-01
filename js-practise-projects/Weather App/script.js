@@ -1,5 +1,6 @@
 const form = document.querySelector('.citysearcherform');
 const input = document.querySelector('.citylocator');
+const spinner = document.querySelector('.spinner')
 
 const cityAndCountryName = document.querySelector('.cityAndCountryName');
 const currentTemperature = document.querySelector('.currentTemperature');
@@ -10,12 +11,21 @@ const windSpeed = document.querySelector('.windSpeed');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+    cityAndCountryName.textContent = '';
+    currentTemperature.textContent = '';
+    weatherCondition.textContent = '';
+    weatherIcon.textContent = '';
+    humidity.textContent = '';
+    windSpeed.textContent = '';
+
     linker(input.value);
     form.reset();
+    spinner.classList.remove('hidden');
 })
 
 async function linker(inputvalue) {
     const weatherInfo = await getWeather(inputvalue);
+    spinner.classList.add('hidden');
     uiInstructor(weatherInfo);
 }
 
@@ -23,14 +33,14 @@ async function getWeather(cityname) {
     try {
         const response = await fetch(`https://wttr.in/${cityname}?format=j1`);
         if (response.ok) {
-            const data = await response.json(); 
+            const data = await response.json();
             return data;
         } else {
             throw new Error('Failed to fetch data');
         }
-    } 
+    }
     catch (error) {
-        console.error('Error:', error); 
+        console.error('Error:', error);
     }
 }
 
