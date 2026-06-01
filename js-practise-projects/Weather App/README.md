@@ -27,6 +27,7 @@ This project fetches live weather data from an API and dynamically updates the U
 - Responsive UI
 - Error handling for failed API requests
 - Dynamic DOM updates
+- Spinner animation
 
 ---
 
@@ -50,6 +51,7 @@ This project fetches live weather data from an API and dynamically updates the U
 - Updating UI dynamically
 - Separating data fetching and UI rendering
 - Handling form submissions
+- Spinner animation
 
 ---
 
