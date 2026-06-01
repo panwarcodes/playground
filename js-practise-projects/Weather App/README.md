@@ -6,7 +6,9 @@ This project fetches live weather data from an API and dynamically updates the U
 
 ---
 
-## Screenshot
+## Live Preview
+
+Link: https://panwarcodes.github.io/playground/js-practise-projects/Weather%20App/
 
 ![Screenshot of the Weather App](./images/image.png)
 
