@@ -1,7 +1,8 @@
 const form = document.querySelector('.citysearcherform');
 const input = document.querySelector('.citylocator');
-const spinner = document.querySelector('.spinner')
+const spinner = document.querySelector('.spinner');
 
+const enterRequest = document.querySelector('.enterRequest');
 const cityAndCountryName = document.querySelector('.cityAndCountryName');
 const currentTemperature = document.querySelector('.currentTemperature');
 const weatherCondition = document.querySelector('.weatherCondition');
@@ -11,6 +12,7 @@ const windSpeed = document.querySelector('.windSpeed');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+    enterRequest.remove();
     cityAndCountryName.textContent = '';
     currentTemperature.textContent = '';
     weatherCondition.textContent = '';
@@ -46,7 +48,7 @@ async function getWeather(cityname) {
 
 function uiInstructor(weatherInfo) {
     console.log(weatherInfo);
-    cityAndCountryName.textContent = `City Name: ${weatherInfo.nearest_area[0].areaName[0].value}\nCountry Name: ${weatherInfo.nearest_area[0].country[0].value}`;
+    cityAndCountryName.textContent = `Region Name: ${weatherInfo.nearest_area[0].region[0].value}\nCountry Name: ${weatherInfo.nearest_area[0].country[0].value}`;
 
     currentTemperature.textContent = `Current Temperature: ${weatherInfo.current_condition[0].temp_C} °C / ${weatherInfo.current_condition[0].temp_F} °F`;
 
