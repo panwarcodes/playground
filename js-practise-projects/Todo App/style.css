@@ -1,0 +1,248 @@
+/* boilerplate  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* styling starts here */
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    padding: 100px;
+}
+
+
+main {
+    height: auto;
+    width: 33em;
+    /* centers the Todo App Hero */
+    margin: 0 auto;
+    background-color: rgb(23, 23, 23);
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5em;
+
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.taskInput,
+.editInput {
+    margin: 0.9em;
+    min-height: 2.8em;
+    width: 23.3em;
+    padding: 10px;
+    resize: none;
+    overflow-y: hidden;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+
+.editInput {
+    margin: 0;
+    width: 18.2em;
+    position: relative;
+    right: 3px;
+
+}
+
+.addButton,
+.deleteButton,
+.editButton,
+.saveButton,
+.taskStatus {
+    height: 2.6em;
+    width: 5em;
+    color: white;
+    font-size: 1em;
+    margin: 2px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+footer {
+    height: 100px;
+    width: 100px;
+}
+
+.Inside_tasks_div {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: white;
+    margin: 0.9em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+}
+
+.taskTEXT {
+    /* margin: 0.9em; */
+    min-height: 2.7em;
+    height: auto;
+    width: 14em;
+    padding: 10px;
+    font-size: medium;
+    overflow-wrap: break-word;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 1em;
+}
+
+
+.addButton {
+    position: relative;
+    right: 0.75em;
+}
+
+.taskStatus {
+    height: 2.6em;
+    width: 3.5em;
+    color: white;
+    font-size: 1em;
+    margin: 2px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.taskStatusName {
+    display: flex;
+    flex-direction: row;
+    gap: 7.5px;
+}
+
+.saveButton {
+    margin: 0;
+    width: 167px;
+    position: relative;
+    left: 3px;
+}
+
+.buttonStorage {
+    position: relative;
+    left: 3px;
+}
+
+.task-completed-delete-btn {
+  width: 315%;
+  position: relative;
+  right: 116px;
+}
+
+/* tablet */
+
+@media screen and (max-width: 734px) {
+
+    body {
+    padding: 0px;
+    padding-top: 6.25em;
+    }
+
+    main {
+        margin: auto;
+        
+    }
+}
+
+/* phone */
+
+@media screen and (max-width: 548px) {
+    main {
+        width: 95%;
+        min-width: 5em;
+        min-height: 11em;
+        height: auto;
+        align-content: center;
+        /* padding: 0px; */
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .taskInput {
+        width: 100%;
+    }
+
+    .addButton {
+        width: 100%;
+        right: 0em;
+    }
+
+    .Inside_tasks_div {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        margin-top: 0.9em;
+    }
+
+    .taskStatusName {
+        width: 100%;
+    }
+
+    .taskTEXT {
+        width: 100%;
+    }
+    
+    .buttonStorage {
+        width: 100%;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .editButton {
+        width: 50%;
+    }
+
+    .deleteButton {
+        width: 50%;
+        position: relative;
+        left: 1px;
+    }
+
+    .editInput {
+        width: 100%;
+        position: static;
+    }
+
+    .saveButton {
+        margin-top: 0.9em;
+        width: 100%;
+        position: static;
+    }
+
+    .task-completed-delete-btn {
+        width: 100%;
+        right: 0; /* Resets the alignment so it sits nicely */
+        position: static;
+    }
+}
