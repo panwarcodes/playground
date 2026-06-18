@@ -1,0 +1,101 @@
+/* boilerplate  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(45deg, rgb(18, 188, 171), rgb(0, 107, 114));
+}
+
+main {
+    height: 37rem;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(21, 138, 126);
+    border-radius: 3em;
+    border: 1px solid rgb(193, 193, 193);
+    color: white;
+    padding: 2rem;
+}
+
+.appName {
+    text-align: center;
+}
+
+.qContent {
+    height: 27rem;
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: white; */
+
+}
+
+.question {
+    text-align: center;
+}
+
+#submit,
+#next,
+#previous {
+    height: 3.5rem;
+    width: 17rem;
+    background-color: rgb(21, 138, 126);
+    border-radius: 1rem;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+}
+
+#previous{
+    margin-right: 10px;
+}
+
+.formSelector {
+    /* background-color: black; */
+    font-size: larger;
+    width: 50rem;
+}
+
+.buttonStorage {
+    /* margin-top: 15rem; */
+    /* position: sticky; */
+    /* top: 19rem; */
+
+    width: 100%;
+    /* background-color: green; */
+    text-align: center;
+}
+
+.questionOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 15rem;
+    font-size: larger;
+}
+
+.scoreSpace {
+    height: 3em;
+    width: 10em;
+    /* margin-bottom: 1em; */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    position: relative;
+    top: 1em;
+}

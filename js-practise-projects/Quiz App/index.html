@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="appName">Quiz App</h1>
+        <hr style="background-color: white; border: none; height: 1px; margin-top: 1em;">
+
+        <h1 class="question" style="margin-top: 0.5em;"></h1>
+
+        <div class="qContent">
+            <!-- <h1 class="question"></h1> -->
+
+            <form class="formSelector">
+                <div class="questionOptions">
+                    <!-- <label>
+                        <input type="radio" name="qOption" value="JavaScript">
+                        Javascript
+                    </label> -->
+                </div>
+                <div class="scoreSpace">
+
+                </div>
+                <br>
+                <div class="buttonStorage">
+                    <button class="buttonOperator" id="previous" data-id="previous" onclick="event.preventDefault();">Previous question</button>
+                    <button class="buttonOperator" id="next" data-id="next" onclick="event.preventDefault();">Next question</button>
+
+                    <button class="buttonOperator" id="submit" data-id="submit" type="submit" onclick="event.preventDefault();">Submit Questions</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
