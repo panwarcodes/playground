@@ -50,10 +50,7 @@ function fileCategoryFinder(fileName) {
 
 // file's category's path maker
 function categoryPathMaker(fileName, fileCategory) {
-
-    const start = unorgFolderPath.indexOf('/') + 1;
-    const end = unorgFolderPath.lastIndexOf('/') + 1;
-    const result = unorgFolderPath.substring(start, end);
+    const result = path.normalize(unorgFolderPath);
 
     const currentDir = import.meta.dirname;
     const joinedPath = path.join(currentDir, result, fileCategory);
