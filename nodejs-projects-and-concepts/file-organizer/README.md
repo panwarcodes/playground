@@ -18,7 +18,7 @@ A zero-dependency, synchronous Node.js script that automatically sorts assets fr
 ## System Rules
 
 * I/O Strategy: Uses synchronous operations (readdirSync, mkdirSync, renameSync) to guarantee linear execution and prevent async race conditions.
-* Path Extraction: Dynamically parses the target folder path via substring slicing of directory separators combined with import.meta.dirname.
+* Path Extraction: Dynamically parses the target folder path via path.normalize() combined with import.meta.dirname.
 * Skipping Logic: If a destination directory already exists, the script logs an alert, skips creation, and proceeds directly to file relocation.
 
 ## Mapped Categories
