@@ -4,6 +4,7 @@ A zero-dependency, synchronous Node.js script that automatically sorts assets fr
 
 ## Storage Tree
 
+```
 .
 ├── unorganised-folder/
 │   ├── Audio/
@@ -12,6 +13,7 @@ A zero-dependency, synchronous Node.js script that automatically sorts assets fr
 │   ├── Images/
 ├── index.js
 └── package.json
+```
 
 ## System Rules
 
