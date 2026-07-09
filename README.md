@@ -35,5 +35,5 @@ Quiz App: [Live Link](https://panwarcodes.github.io/playground/js-practise-proje
 3. nodejs-projects-and-concepts: **<br>
 Learning logs for Node.js from nodejs.org/learn: <br>
 cli-notes-app: [Code Link](https://github.com/panwarcodes/playground/tree/main/nodejs-projects-and-concepts/cli-notes-app) <br>
-file-organizer: [Pending](https://github.com/panwarcodes/playground/tree/main/nodejs-projects-and-concepts/file-organizer) <br>
+file-organizer: [Code Link](https://github.com/panwarcodes/playground/tree/main/nodejs-projects-and-concepts/file-organizer) <br>
 node js concepts: [Code Link](https://github.com/panwarcodes/playground/tree/main/nodejs-projects-and-concepts/node%20js%20concepts)
