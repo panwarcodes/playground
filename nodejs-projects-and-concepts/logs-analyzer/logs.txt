@@ -1,0 +1,9 @@
+INFO User logged in
+INFO User viewed dashboard
+WARNING Disk usage at 75%
+ERROR Failed to connect to database
+INFO User logged out
+ERROR Payment service unavailable
+WARNING High memory usage
+INFO User logged in
+ERROR Invalid JWT token
