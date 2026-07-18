@@ -39,3 +39,7 @@ file-organizer: [Code Link](https://github.com/panwarcodes/playground/tree/main/
 logs-analyzer: [Code Link](https://github.com/panwarcodes/playground/tree/main/nodejs-projects-and-concepts/logs-analyzer) <br>
 raw-http-server: [Code Link](https://github.com/panwarcodes/playground/tree/main/nodejs-projects-and-concepts/raw-http-server) <br>
 node js concepts: [Code Link](https://github.com/panwarcodes/playground/tree/main/nodejs-projects-and-concepts/node%20js%20concepts)
+
+4. express.js-concepts-and-projects: ** <br>
+Learning logs for Express.js from expressjs.com/en/5x/starter/installing: <br>
+user-management-api: [Code Link](https://github.com/panwarcodes/playground/tree/main/expressjs-concepts-and-projects/user-management-api)
